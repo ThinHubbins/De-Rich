@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+
+
+
+/* NAVBAR STYLE SECTION STARTS HERE */
+/* Gradient background */
+.custom-nav {
+  background: linear-gradient(to right, #000, #121212, #1a1a1a);
+  padding: 20px 0;
+}
+
+/* Logo font */
+.brand-logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 28px;
+}
+
+/* Nav links */
+.nav-links .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin: 0 12px;
+}
+
+.nav-links .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* Icons */
+.nav-icon {
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-icon:hover {
+  color: #ffc107;
+}
+
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 800;
+  font-style: normal;
+}
+/* NAVBAR STYLE SECTION ENDS HERE */
+
+/* whatsapp icon */
+ .whapp {
+      position: fixed;
+    
+      /* -webkit-sticky; */
+      bottom: 48px;
+      position: fixed;
+      right: 48px;
+      z-index: 2 !important;
+    }
+  
+    .whapp-btn {
+      display: flex;
+      text-align: center;
+      border-radius: 50%; /* Alterado para 50% para obter formato circular */
+      height: 5rem;
+      min-width: 5rem;
+      background-color: #54c151;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, .18);
+      -webkit-transition-duration: 0.1s;
+      transition-duration: 0.1s;
+      padding: 0.25rem;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .whapp-btn img {
+      width: 56px;
+      display: flex;
+      text-align: center;
+    }
+  
+    .whapp-btn:hover {
+      background-color: #439a41;
+    }
+  
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(84, 193, 81, 0.7);
+        border-radius: 50%; /* Adicionado para manter o formato circular */
+      }
+      70% {
+        transform: scale(1.2);
+        box-shadow: 
+          0 0 0 10px rgba(84, 193, 81, 0),
+          0 0 0 20px rgba(84, 193, 81, 0.4),
+          0 0 0 30px rgba(84, 193, 81, 0.2),
+          0 0 0 40px rgba(84, 193, 81, 0); /* Adicionado degradê com distanciamento */
+        border-radius: 50%; /* Adicionado para manter o formato circular */
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(84, 193, 81, 0);
+        border-radius: 50%; /* Adicionado para manter o formato circular */
+      }
+    }
+  
+    .animated.pulse {
+      animation: pulse infinite;
+      animation-duration: 2s;
+    }
+
+ 
+
+    @media screen and (max-width: 479px) {
+      .menu-button-2 {
+        background-color: #fff;
+        color: #000;
+      }
+    }

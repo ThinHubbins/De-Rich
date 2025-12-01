@@ -9,10 +9,12 @@ import Shop from './routes/Shop';
 import Contact from './routes/Contact';
 import Team from './routes/Team';
 import Faq from './routes/Faq';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div>
+      <Navbar />
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
