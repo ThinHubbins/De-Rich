@@ -6,7 +6,7 @@ const Navbar = () => {
       <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
         <div class="container">
           <a class="navbar-brand brand-logo" href="/">
-            Feane
+            De-Rich
           </a>
 
           <button
