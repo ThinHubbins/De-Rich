@@ -10,6 +10,7 @@ import Contact from './routes/Contact';
 import Team from './routes/Team';
 import Faq from './routes/Faq';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='/faq' element={<Faq />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
 
     </div>
   ); 

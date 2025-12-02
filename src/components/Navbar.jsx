@@ -1,4 +1,5 @@
 import React from "react";
+import Derichhero from "../routes/heroimg/De-Richheroimg.png"
 
 const Navbar = () => {
   return (
@@ -6,11 +7,11 @@ const Navbar = () => {
       <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
         <div class="container">
           <a class="navbar-brand brand-logo" href="/">
-            De-Rich
+            <img className="derichimg" src={Derichhero} alt="De-Rich Logo" />
           </a>
 
           <button
-            class="navbar-toggler"
+            class="buttn navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#mainNav"
@@ -50,11 +51,6 @@ const Navbar = () => {
                   BLOG
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/">
-                  BOOK TABLE
-                </a>
-              </li>
             </ul>
 
             <div class="d-flex align-items-center gap-3">
@@ -62,7 +58,7 @@ const Navbar = () => {
               <i class="bi bi-cart-fill nav-icon"></i>
               <i class="bi bi-search nav-icon"></i>
 
-              <button class="btn btn-warning rounded-pill px-4 fw-semibold">
+              <button class="btn buttn rounded-pill px-4 fw-semibold">
                 Order Online
               </button>
             </div>
