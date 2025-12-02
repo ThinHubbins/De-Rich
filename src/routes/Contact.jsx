@@ -1,61 +1,110 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import Whatsapp from "../components/Whatsapp";
-// import Navbar from '../components/Navbar'
+import Swal from "sweetalert2";
 
 const Contact = () => {
+
+  const formRef = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_tdo82um",      // e.g. service_123abc
+        "template_ikg5myi",     // e.g. template_45dfj2
+        formRef.current,
+        "fO_LqcvBKCqUDqWf6"       // e.g. X3abcdLkje9
+      )
+      .then(
+        () => {
+        //   alert("Message sent successfully!");
+          formRef.current.reset();
+          Swal.fire(
+            'Thank you!',
+            'Your message has been sent successfully.',
+            'success'
+          )
+        },
+        (error) => {
+          alert("Failed to send message, please try again.");
+          console.error(error);
+        }
+      );
+  };
+
   return (
     <div>
       <section className="contact-section">
         <div className="container">
           <div className="row">
+            
+            {/* FORM SECTION */}
             <div className="col-md-6">
-                <h1 className="mt-5 great-vibes-regular contact">Contact Us</h1>
+              <h1 className="mt-5 great-vibes-regular contact">Contact Us</h1>
+
               <div className="mt-5">
-                <form>
+                <form ref={formRef} onSubmit={sendEmail}>
                   <input
                     type="text"
+                    name="user_name"
                     className="form-control"
                     placeholder="Your Name"
+                    required
                   />
                   <br />
+
                   <input
                     type="email"
+                    name="user_email"
                     className="form-control"
                     placeholder="Your Email"
+                    required
                   />
                   <br />
+
                   <input
                     type="text"
+                    name="subject"
                     className="form-control"
                     placeholder="Subject"
+                    required
                   />
                   <br />
+
                   <textarea
                     className="form-control"
+                    name="message"
                     rows="5"
                     placeholder="Message"
+                    required
                   ></textarea>
                   <br />
-                  <button className="buttn btn">Send Message</button>
+
+                  <button type="submit" className="buttn btn">
+                    Send Message
+                  </button>
+
                 </form>
               </div>
             </div>
+
+            {/* MAP SECTION */}
             <div className="col-md-6">
-            <iframe className="mappie"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16462.462701158984!2d3.293051218295809!3d6.6051462546954225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b91ab08effccd%3A0xc8487a911dc051d9!2sSam%20Rose%20Cl%2C%20Alimosho%2C%20102213%2C%20Lagos!5e0!3m2!1sen!2sng!4v1764608619721!5m2!1sen!2sng"
-              width="600"
-              height="350"
-              allowFullScreen=""
-              loading="lazy"
-              title="map"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div></div>
+              <iframe
+                className="mappie"
+                src="https://www.google.com/maps/embed?pb=!1m18!...your map URL"
+                width="600"
+                height="350"
+                loading="lazy"
+                title="map"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
           </div>
-          
-            
-        
+        </div>
       </section>
+
       <Whatsapp />
     </div>
   );
