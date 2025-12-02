@@ -7,7 +7,7 @@ const Navbar = () => {
       <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
         <div class="container">
           <a class="navbar-brand brand-logo" href="/">
-            <img className="derich" src={Derichhero} alt="De-Rich Logo" />
+            <img width="100" className="derichimg" src={Derichhero} alt="De-Rich Logo" />
           </a>
 
           <button

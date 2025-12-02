@@ -11,11 +11,14 @@ import Team from './routes/Team';
 import Faq from './routes/Faq';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Whatsapp from './components/Whatsapp';
+
 
 function App() {
   return (
     <div>
       <Navbar />
+  <Whatsapp />
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
@@ -29,6 +32,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Footer />
+
 
     </div>
   ); 
