@@ -6,7 +6,7 @@ import './NoPage.css'
 const NoPage = () => {
   return (
     <div>
-      <div className='no-page'>
+      <div className='container py-5 no-page'>
       <div className='row m-0 mt-5'>
         <div className='col-md-12 text-center'>
           <div className='box'>

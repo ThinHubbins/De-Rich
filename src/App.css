@@ -1,22 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lobster&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lobster&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap');
 
 
 
 /* NAVBAR STYLE SECTION STARTS HERE */
-/* Gradient background */
-/* .derichimg {
-  width: 200%;
-  height: 200%;
-}
-.navbar-brand{
-  width: 20%;
-} */
 .custom-nav {
-  background: transparent;
-  padding: 20px 0;
+  background: transparent !important;
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
+
 
 /* Button starts here */
 .buttn{
@@ -159,7 +155,112 @@ input, textarea {
 
 
 
+
+/* About section starts here */
+.about-section{
+    background-color: #F7F3E9;
+    padding: 55px;
+    
+}
+.abouth1 {
+    font-family: "Lobster", cursive;
+    font-size: 30px;
+    color: #4A3428;
+    text-align: start;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-decoration:double underline #B8895B;
+}
+
+.aboutp{
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    color: #4A3428;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.abtex{
+  z-index: 1;
+}
+/* icon styles */
+.inf{
+  padding: 5px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.icn{
+  padding: 5px;
+    color: #b8b64c;
+  border: 1px solid #b8b64c;
+  border-radius: 50%;
+}
+.img-fluid{
+  position: relative;
+}
+/* About section ends here */
+
+
+/* faq section starts here */
+.faqbod{
+  background-color: #F7F3E9;
+}
+.boxfq {
+  position: relative; 
+  z-index: 1;
+  width: 100%; 
+  background-color: #E8DCC7;
+  padding: 30px;
+  border-radius: 10px; 
+}
+.faqtex{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  color: #4A3428;
+  text-align: justify;
+}
+.acodon{
+  margin-top: 30px;
+}
+/* Accordion Header Button */
+.accordion-button {
+  background-color: #B8895B; /* Caramel Brown */
+  color: #F7F3E9;           /* Warm Cream */
+  font-weight: 600;
+  border: 1px solid #E8DCC7; /* Soft Latte border */
+  transition: background-color 0.3s ease;
+}
+
+/* Accordion Header Hover & Expanded */
+.accordion-button:hover,
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  background-color: #D8A45B; /* Wheat Gold */
+  color: #2A1C17;            /* Dark Roast text on highlight */
+}
+
+/* Accordion Body */
+.accordion-body {
+  background-color: #E8DCC7; /* Soft Latte */
+  color: #4A3428;            /* Deep Cocoa */
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Accordion Item Border */
+.accordion-item {
+  border: 1px solid #E8DCC7; /* Soft Latte */
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+
+/* faq section ends here */
+
+
 /* Footer Section Starts Here */
+footer{
+  position: relative;
+  bottom: 0;
+}
 .gradient-footer {
     background: #2A1C17
 }
