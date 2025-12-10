@@ -1,5 +1,5 @@
 import React from "react";
-import Derichhero from "../routes/heroimg/De-Richheroimg.png"
+import Derichhero from "../routes/heroimg/De-Richheroimg.png";
 
 const Navbar = () => {
   return (
@@ -7,7 +7,12 @@ const Navbar = () => {
       <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
         <div class="container">
           <a class="navbar-brand brand-logo" href="/">
-            <img width="100" className="derichimg" src={Derichhero} alt="De-Rich Logo" />
+            <img
+              width="100"
+              className="derichimg"
+              src={Derichhero}
+              alt="De-Rich Logo"
+            />
           </a>
 
           <button

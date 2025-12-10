@@ -4,26 +4,25 @@ import Whatsapp from "../components/Whatsapp";
 import Swal from "sweetalert2";
 
 const Contact = () => {
-
   const formRef = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_tdo82um",      // e.g. service_123abc
-        "template_ikg5myi",     // e.g. template_45dfj2
+        "service_tdo82um", // e.g. service_123abc
+        "template_ikg5myi", // e.g. template_45dfj2
         formRef.current,
-        "fO_LqcvBKCqUDqWf6"       // e.g. X3abcdLkje9
+        "fO_LqcvBKCqUDqWf6" // e.g. X3abcdLkje9
       )
       .then(
         () => {
-        //   alert("Message sent successfully!");
+          //   alert("Message sent successfully!");
           formRef.current.reset();
           Swal.fire(
-            'Thank you!',
-            'Your message has been sent successfully.',
-            'success'
-          )
+            "Thank you!",
+            "Your message has been sent successfully.",
+            "success"
+          );
         },
         (error) => {
           alert("Failed to send message, please try again.");
@@ -37,7 +36,6 @@ const Contact = () => {
       <section className="contact-section">
         <div className="container py-5">
           <div className="row">
-            
             {/* FORM SECTION */}
             <div className="col-md-6">
               <h1 className="mt-5 great-vibes-regular contact">Contact Us</h1>
@@ -83,7 +81,6 @@ const Contact = () => {
                   <button type="submit" className="buttn btn">
                     Send Message
                   </button>
-
                 </form>
               </div>
             </div>
@@ -100,7 +97,6 @@ const Contact = () => {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-
           </div>
         </div>
       </section>

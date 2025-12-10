@@ -1,20 +1,23 @@
-import React from 'react';
-import Testimonials from '../components/Testimonials';
+import React from "react";
+import Testimonials from "../components/Testimonials";
 
 const Faq = () => {
   return (
     <div className="faqbod">
       <div className="container py-5">
+        <div className="text-center faq">Have questions? We’re here to help!</div>
         <div className="row m-0 min-vh-100 d-flex justify-content-center align-items-center">
           <div className="col-12 col-md-8">
             <div className="boxfq">
               <div className="faqtex text-center mb-4">
-                Have questions? We’re here to help!
+                FAQ
               </div>
 
               <div className="acodon">
-                <div className="accordion accordion-flush" id="accordionFlushExample">
-
+                <div
+                  className="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
                   {/* ITEM 1 */}
                   <div className="accordion-item">
                     <h2 className="accordion-header" id="flush-headingOne">
@@ -86,10 +89,8 @@ const Faq = () => {
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
-
             </div>
           </div>
         </div>
